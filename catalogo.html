@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Catalogo - Quinta Munay KI</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        :root {
+            --bs-primary-rgb: 244, 175, 37;
+            --bs-body-bg: #fcfbf8;
+            --bs-body-color: #1c170d;
+            --bs-light-bg-subtle: #f8f7f5;
+            --bs-secondary-rgb: 156, 129, 73;
+        }
+        body {
+            font-family: "Be Vietnam Pro", sans-serif;
+            background-color: var(--bs-body-bg);
+            color: var(--bs-body-color);
+        }
+        .navbar {
+            border-bottom: 1px solid rgba(244, 175, 37, 0.2);
+        }
+        .text-primary {
+            color: #f4af25 !important;
+        }
+        .bg-primary {
+            background-color: #f4af25 !important;
+        }
+        .btn-primary {
+            background-color: #f4af25;
+            border-color: #f4af25;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #e09f21;
+            border-color: #e09f21;
+        }
+        .text-muted {
+            color: #9c8149 !important;
+        }
+        .card {
+            background-color: var(--bs-light-bg-subtle);
+            border: 1px solid rgba(244, 175, 37, 0.1);
+        }
+        .card-img-top {
+            width: 100%;
+            height: 15rem;
+            object-fit: cover;
+        }
+        .badge.bg-success-subtle {
+            background-color: #d1e7dd !important;
+            color: #0f5132 !important;
+        }
+        .badge.bg-danger-subtle {
+            background-color: #f8d7da !important;
+            color: #842029 !important;
+        }
+        .btn-outline-primary {
+            color: var(--bs-body-color);
+            border-color: rgba(244, 175, 37, 0.3);
+        }
+        .btn-outline-primary:hover, .btn-outline-primary.active {
+            background-color: rgba(244, 175, 37, 0.2);
+            color: var(--bs-body-color);
+            border-color: rgba(244, 175, 37, 0.3);
+        }
+        .dropdown-menu {
+            background-color: var(--bs-light-bg-subtle);
+        }
+        .dropdown-item:hover {
+             background-color: rgba(244, 175, 37, 0.1);
+        }
+        footer {
+            border-top: 1px solid rgba(244, 175, 37, 0.2);
+        }
+        .nav-link {
+          color: var(--bs-body-color);
+        }
+        .nav-link:hover {
+          color: #f4af25;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+<div class="container">
+<header class="navbar navbar-expand-md navbar-light">
+<div class="container-fluid px-sm-3 px-lg-5">
+<a class="navbar-brand d-flex align-items-center gap-2" href="#">
+<svg class="text-primary" fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.93c-3.32-.15-5.93-2.76-6.08-6.08-.02-.4.29-.73.69-.73.34 0 .64.24.69.58.12 2.5 2.15 4.53 4.65 4.65.34.05.58.35.58.69 0 .4-.33.71-.73.69zm3.5-3.43c-.41 0-.75-.34-.75-.75s.34-.75.75-.75.75.34.75.75-.34.75-.75.75zm1.5-3.5c-.41 0-.75-.34-.75-.75s.34-.75.75-.75.75.34.75.75-.34.75-.75.75z"></path>
+</svg>
+<h2 class="h5 mb-0 fw-bold">Quinta Munay KI</h2>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a class="nav-link" href="#">Inicio</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Nosotros</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Contacto</a>
+</li>
+</ul>
+</div>
+</div>
+</header>
+<main>
+<div class="container py-5">
+<div class="row">
+<div class="col-12 text-center mb-4">
+<h1 class="display-4 fw-bolder">Nuestro Catálogo de Pollitos</h1>
+<p class="text-muted fs-5">Conoce a nuestros pequeños y adorables pollitos bebés. Filtra por disponibilidad, raza o precio para encontrar el pollito perfecto para ti.</p>
+</div>
+</div>
+<div class="row mb-4 align-items-center">
+<div class="col-md-6 mb-3 mb-md-0">
+<div class="btn-group" role="group">
+<button class="btn btn-outline-primary active" type="button">Todos</button>
+<button class="btn btn-outline-primary" type="button">Disponibles</button>
+<button class="btn btn-outline-primary" type="button">Agotados</button>
+</div>
+</div>
+<div class="col-md-6 d-flex justify-content-md-end">
+<div class="dropdown">
+<button aria-expanded="false" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" id="dropdownMenuButton1" type="button">
+                                Ordenar por
+                            </button>
+<ul aria-labelledby="dropdownMenuButton1" class="dropdown-menu">
+<li><a class="dropdown-item" href="#">Raza</a></li>
+<li><a class="dropdown-item" href="#">Precio: más bajo</a></li>
+<li><a class="dropdown-item" href="#">Precio: más alto</a></li>
+<li><a class="dropdown-item" href="#">Disponibilidad</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+<div class="col">
+<div class="card h-100 shadow-sm rounded-3">
+<img alt="Un pequeño pollito Leghorn amarillo" class="card-img-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGrDf8tZmLojv-Uw0TgjBfgGIKTewYnbkz9hLY4QYyioeGn9GFBKHQq-cR9CGqvO15Dc4KHNR9X5xS54qG-Jy_eTPvSsc01M4IVc6wALqV23Hj90z2Xf_4S2DCMM5pgQH45_Du13PKbmWgSHnq4octWRhGXVEs8ArKP-V2TOaYrRq7zg3R-GjHZjQb0cKL6PeaayjpFWVKeNkngB2rmzLMGzd8eTKpANODsgtSEKRwYyUTkV_-JsVzCfjHbajkN8cHTFLxWPreLEo"/>
+<div class="card-body d-flex flex-column">
+<div class="d-flex justify-content-between align-items-start">
+<h5 class="card-title fw-bold">Nagazaki</h5>
+<span class="badge bg-success-subtle rounded-pill">Disponible</span>
+</div>
+<p class="card-text text-muted small">1 semana, amarillo, pequeño</p>
+<p class="text-primary fw-bold fs-5 mt-2">$5.00</p>
+<div class="mt-auto pt-3">
+<a class="btn btn-primary w-100" href="#contacto">Consultar</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100 shadow-sm rounded-3">
+<img alt="Un pollito Australorp negro" class="card-img-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClemHfeFc-de_fjMZpKcSU5nM6J_9lGXVW1z7ZRhcBVLn6X3NLmCXYF6KrQzmlnty9Lyna1fMv40SDs-w-sr9Oj9iMqdSUymhnf1EoB5ENzEe-gqnmnS0ViKfmsbB6UPIi5AZCzZgAybmxSQRdIa375Cyo_cFkUciERNWJ7Z71bXHDxWW3WO4CTGA2pase7ly_jcEThmGjt2CiOKoH6ZLfybI7iolphC8SjV2VOiLD79BJ6wPiDcmEGOVvyQBaYTV_AELz1FVyWpw"/>
+<div class="card-body d-flex flex-column">
+<div class="d-flex justify-content-between align-items-start">
+<h5 class="card-title fw-bold">Brahamas</h5>
+<span class="badge bg-danger-subtle rounded-pill">Agotado</span>
+</div>
+<p class="card-text text-muted small">2 semanas, negro, mediano</p>
+<p class="text-primary fw-bold fs-5 mt-2">$7.50</p>
+<div class="mt-auto pt-3">
+<a class="btn btn-primary w-100" href="#contacto">Consultar</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100 shadow-sm rounded-3">
+<img alt="Un pollito Plymouth Rock barrado" class="card-img-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT_jIdTxRPOQCswvpUS-pL2uZhedRTRba2vha4TNFilUMWa1bfsCbmrihk9Wxz7Yr4o3UY1NcS1HFGYgm6n0gHRRcKxiwZ8OEAhN3393zuL0qCG4Rsz3Af-H92kPFvsLH2wTF12UwFnxJrnU3jP-HPDi0HvACOXJYq8hw5YihUHl2NnGf4LZb_U6Qf_4rPPiAMkZOPAvMfBqpuSUztQXyUgIBNXhD0_PieXfVKe1WBgvztZYdV1PZrIJJXYehIgEy6F-F82rcYuc8"/>
+<div class="card-body d-flex flex-column">
+<div class="d-flex justify-content-between align-items-start">
+<h5 class="card-title fw-bold">Sedosas Del Japón</h5>
+<span class="badge bg-success-subtle rounded-pill">Disponible</span>
+</div>
+<p class="card-text text-muted small">1 semana, barrado, mediano</p>
+<p class="text-primary fw-bold fs-5 mt-2">$6.00</p>
+<div class="mt-auto pt-3">
+<a class="btn btn-primary w-100" href="#contacto">Consultar</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100 shadow-sm rounded-3">
+<img alt="Un pollito Rhode Island Red rojo" class="card-img-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBICMKWI5vncHHMndXtgS1-nQeXk7wxIyX8VLjPo-s0wBiMwiIBk5FbabanX7qLZ2KKYFtUQqTEJ_Bal8SuzvubNRjdM2IG4fONQl693rqCepYHR5EwyGbJY09ejohs5o3kKHWmmyp-c0Ju_AyebcfDZy9iRhwB-0ESGo0qRhS2vuFeWeRfoJVzO02a4sxptEuJbHZ4LwWEgb1zBfmP7vDKVQpSlDHlImZdeGuz5TQ3JwvgmD8vFu0ZizfxQDVTsbWOsW-cjnQa1E"/>
+<div class="card-body d-flex flex-column">
+<div class="d-flex justify-content-between align-items-start">
+<h5 class="card-title fw-bold">Golden Neck</h5>
+<span class="badge bg-success-subtle rounded-pill">Disponible</span>
+</div>
+<p class="card-text text-muted small">3 semanas, rojo, grande</p>
+<p class="text-primary fw-bold fs-5 mt-2">$8.00</p>
+<div class="mt-auto pt-3">
+<a class="btn btn-primary w-100" href="#contacto">Consultar</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100 shadow-sm rounded-3">
+<img alt="Un pollito Rhode Island Red rojo" class="card-img-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBICMKWI5vncHHMndXtgS1-nQeXk7wxIyX8VLjPo-s0wBiMwiIBk5FbabanX7qLZ2KKYFtUQqTEJ_Bal8SuzvubNRjdM2IG4fONQl693rqCepYHR5EwyGbJY09ejohs5o3kKHWmmyp-c0Ju_AyebcfDZy9iRhwB-0ESGo0qRhS2vuFeWeRfoJVzO02a4sxptEuJbHZ4LwWEgb1zBfmP7vDKVQpSlDHlImZdeGuz5TQ3JwvgmD8vFu0ZizfxQDVTsbWOsW-cjnQa1E"/>
+<div class="card-body d-flex flex-column">
+<div class="d-flex justify-content-between align-items-start">
+<h5 class="card-title fw-bold">hola</h5>
+<span class="badge bg-success-subtle rounded-pill">Disponible</span>
+</div>
+<p class="card-text text-muted small">3 semanas, rojo, grande</p>
+<p class="text-primary fw-bold fs-5 mt-2">$8.00</p>
+<div class="mt-auto pt-3">
+<a class="btn btn-primary w-100" href="#contacto">Consultar</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100 shadow-sm rounded-3">
+<img alt="Un pollito Orpington de color beige" class="card-img-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUaI9GjCJzpeJHjq6mGOOub4xNgJjbjwyuDHSI_bMLbhl6YugWCAn5T68oa0In33DjlYkH3bS4TGNDlyNBrs6xvq1GMgSLjuZ3S_6MKZS5VDE5qr88CAPZUGIQPljB1I68RUvzen-H1LRsq_BgeSBVSS--UnZa_yE-cmPyTpxGb7dCDxecBKkuOPNrvsbK-dE4gL5mD8HTv0PZbqAkxGPg5KNgyJFzdJsI0cQlhgNB9kLxyH_rW1UtWfGeSIc3xHdOBleQw0lY5lg"/>
+<div class="card-body d-flex flex-column">
+<div class="d-flex justify-content-between align-items-start">
+<h5 class="card-title fw-bold">CHAU</h5>
+<span class="badge bg-danger-subtle rounded-pill">Agotado</span>
+</div>
+<p class="card-text text-muted small">2 semanas, beige, grande</p>
+<p class="text-primary fw-bold fs-5 mt-2">$9.00</p>
+<div class="mt-auto pt-3">
+<a class="btn btn-primary w-100" href="#contacto">Consultar</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100 shadow-sm rounded-3">
+<img alt="Un pollito Silkie blanco" class="card-img-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfjJA4zijEhelrdPR77hwQ3UZy7zJ4tkh1FpGyUpGJmI897ZMk33Ubb8CsKiKB-6pZc48zq0EOmPSGNL1vogs3rdfMTEWsDAGt3BOf4dJha0MWRuO5p16L8iM05F4oQ2cskPa7B9LUQd2g_vZuG5EJK3bqjBUzYZcM7HcYJCw6V9spzXvmJXZhOVIWSS6rX46EAJj4reFdlE3jDzh2VPLsMd2wQD0cme6mAnkJPhwVBf1_WqMQwa8g9bAyRav5n2U8C1xS6FwjRvk"/>
+<div class="card-body d-flex flex-column">
+<div class="d-flex justify-content-between align-items-start">
+<h5 class="card-title fw-bold">QUE</h5>
+<span class="badge bg-success-subtle rounded-pill">Disponible</span>
+</div>
+<p class="card-text text-muted small">4 semanas, blanco, pequeño</p>
+<p class="text-primary fw-bold fs-5 mt-2">$10.00</p>
+<div class="mt-auto pt-3">
+<a class="btn btn-primary w-100" href="#contacto">Consultar</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100 shadow-sm rounded-3">
+<img alt="Un pollito Silkie blanco" class="card-img-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfjJA4zijEhelrdPR77hwQ3UZy7zJ4tkh1FpGyUpGJmI897ZMk33Ubb8CsKiKB-6pZc48zq0EOmPSGNL1vogs3rdfMTEWsDAGt3BOf4dJha0MWRuO5p16L8iM05F4oQ2cskPa7B9LUQd2g_vZuG5EJK3bqjBUzYZcM7HcYJCw6V9spzXvmJXZhOVIWSS6rX46EAJj4reFdlE3jDzh2VPLsMd2wQD0cme6mAnkJPhwVBf1_WqMQwa8g9bAyRav5n2U8C1xS6FwjRvk"/>
+<div class="card-body d-flex flex-column">
+<div class="d-flex justify-content-between align-items-start">
+<h5 class="card-title fw-bold">AHAM</h5>
+<span class="badge bg-success-subtle rounded-pill">Disponible</span>
+</div>
+<p class="card-text text-muted small">4 semanas, blanco, pequeño</p>
+<p class="text-primary fw-bold fs-5 mt-2">$10.00</p>
+<div class="mt-auto pt-3">
+<a class="btn btn-primary w-100" href="#contacto">Consultar</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+</main>
+<footer class="mt-5 py-4">
+<div class="container text-center text-md-start">
+<div class="row align-items-center">
+<div class="col-md-6 mb-3 mb-md-0">
+<p class="text-muted small mb-0">© 2025 Nicolas Mares. Todos los derechos reservados.</p>
+</div>
+<div class="col-md-6 d-flex justify-content-center justify-content-md-end gap-3">
+<a class="text-muted" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="text-muted" href="#"><span class="material-symbols-outlined">call</span></a>
+<a class="text-muted" href="#"><span class="material-symbols-outlined">place</span></a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body></html>
